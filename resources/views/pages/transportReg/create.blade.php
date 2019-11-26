@@ -115,6 +115,19 @@
                 </div>  
               </div> 
 
+              <div class="col-md-4">
+                 <div class="form-group">
+                  <label>Start Date</label>
+                  <input type="date" name="start_date" class="form-control">
+                </div>  
+              </div> 
+              <div class="col-md-4">
+                 <div class="form-group">
+                  <label>End Date</label>
+                  <input type="date" name="end_date" class="form-control">
+                </div>  
+              </div> 
+
               <div class=" ml-auto" style="margin-top: 5px;">
                   <button type="submit" name="submit" class="btn btn-success">Add Vehicles</button>
                 </div> 

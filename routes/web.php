@@ -33,4 +33,11 @@ Route::get('transportReg/{id}/edit', 'TransportController@edit')->name('transpor
 Route::post('transportReg/{id}/update', 'TransportController@update')->name('transportReg.update');
 Route::delete('transportReg/{id}/destroy', 'TransportController@destroy')->name('transportReg.destroy');
 
+Route::get('agreement', 'AgreementController@index')->name('agreement.index');
+Route::get('agreement/create', 'AgreementController@create')->name('agreement.create');
+Route::post('agreement/store', 'AgreementController@store')->name('agreement.store');
+// Route::get('agreement/{id}/edit', 'AgreementController@edit')->name('agreement.edit');
+// Route::post('agreement/{id}/update', 'AgreementController@update')->name('agreement.update');
+// Route::delete('agreement/{id}/destroy', 'AgreementController@destroy')->name('agreement.destroy');
+
 

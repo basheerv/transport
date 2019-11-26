@@ -27,8 +27,8 @@
                     <th>Category</th>
                     <th>Color</th>
                     <th>Weight</th>
-                    <th>Status</th>
                     <th>temperature</th>
+                    <th>Status</th>
                			<th>Edit</th>
                			<th>Delete</th>
                		</tr>

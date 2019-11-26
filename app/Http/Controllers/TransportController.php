@@ -65,7 +65,9 @@ class TransportController extends Controller
             'color'            => 'required',
             'weight'           => 'required',
             'temperature'      => 'required',
-            'status'           => 'required|numeric'
+            'status'           => 'required|numeric',
+            'start_date'       => 'required',
+            'end_date'         => 'required'
         ]);
 
 
@@ -84,7 +86,9 @@ class TransportController extends Controller
             'color'         => $request->color,
             'weight'        => $request->weight,
             'temperature'   => $request->temperature,
-            'status'        => $request->status
+            'status'        => $request->status,
+            'start_date'    => $request->start_date,
+            'end_date'      => $request->end_date
         ]);
 
         Session::flash('success', 'Create new Transport Reg successfully');
@@ -140,7 +144,9 @@ class TransportController extends Controller
             'color'            => 'required',
             'weight'           => 'required',
             'temperature'      => 'required',
-            'status'            => 'required|numeric'
+            'status'            => 'required|numeric',
+            'start_date'       => 'required',
+            'end_date'         => 'required'
         ]);
 
 
@@ -161,6 +167,8 @@ class TransportController extends Controller
           $transportReg->weight = $request->weight;
           $transportReg->temperature = $request->temperature;
           $transportReg->status = $request->status;
+          $transportReg->start_date = $request->start_date;
+          $transportReg->end_date = $request->end_date;
           $transportReg->save();
 
           Session::flash('success', 'Updated Record successfully');

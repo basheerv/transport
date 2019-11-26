@@ -29,7 +29,9 @@ class CreateTransportsTable extends Migration
             $table->string('color');
             $table->string('weight');
             $table->string('temperature');
-            $table->integer('status')->default(0);    
+            $table->integer('status')->default(0);
+            $table->date('start_date');
+            $table->date('end_date');    
             $table->timestamps();
         });
     }
